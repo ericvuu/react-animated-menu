@@ -5,7 +5,7 @@ const Home = () => {
     <div className="container">
       <div className="wrapper">
         <h5>
-          The <b>HOME</b>, is a creative, market driven, global real estate firm
+          <b>HOME</b> is a creative, market driven, global real estate firm
           leveraging software to revolutionize the industry.
         </h5>
       </div>
