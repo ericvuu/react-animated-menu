@@ -39,8 +39,6 @@ body {
   }
 }
 
-// HEADER
-
 header {
   height: 100px;
   .inner-header {
@@ -67,11 +65,8 @@ header {
       }
     }
   }
-
-  // HAMBURGER MENU
-
   .hamburger-menu {
-    // display: none;
+    display: none;
     z-index: 9;
     top: 0;
     left: 0;
@@ -104,6 +99,11 @@ header {
         height: 100%;
         width: 100%;
         opacity: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-name: backgroundEffect;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
       }
       .wrapper {
         position: relative;
@@ -176,5 +176,23 @@ header {
         }
       }
     }
+  }
+}
+
+@keyframes backgroundEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 40% 10%;
+  }
+  50% {
+    background-position: 0 10%;
+  }
+  75% {
+    background-position: 10% 40%;
+  }
+  100% {
+    background-position: 0% 0%;
   }
 }
